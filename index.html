@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Бурцев / Web Core / JavaScript в браузере</title>
+</head>
+<body>
+
+<!--В задании: На мобильном нужно инициировать этот слайдер (погуглите, как это сделать только для мобилки-->
+<!--Сделал чтобы слайдер был только на мобильных независимо от разрешения-->
+
+<div class="blockWrapper">
+    <h1 class="headerText">Ремонт техники различных брендов</h1>
+    <div class="viewer swiper">
+        <div class="viewer__content swiper-wrapper">
+            <a class="viewer__card swiper-slide" href="#" title="lenovo">
+                <img class="viewer__cardLogo" src="./img/lenovo.png" alt="lenovo">
+            </a>
+            <a class="viewer__card swiper-slide" href="#" title="samsung">
+                <img class="viewer__cardLogo" src="./img/samsung.png" alt="samsung">
+            </a>
+            <a class="viewer__card swiper-slide" href="#" title="apple">
+                <img class="viewer__cardLogo" src="./img/apple.png" alt="apple">
+            </a>
+            <a class="viewer__card swiper-slide" href="#" title="viewSonic">
+                <img class="viewer__cardLogo" src="./img/viewSonic.png" alt="viewSonic">
+            </a>
+            <a class="viewer__card swiper-slide" href="#" title="bosch">
+                <img class="viewer__cardLogo" src="./img/bosch.png" alt="bosch">
+            </a>
+            <a class="viewer__card swiper-slide" href="#" title="hp">
+                <img class="viewer__cardLogo" src="./img/hp.png" alt="hp">
+            </a>
+            <a class="viewer__card swiper-slide" href="#" title="acer">
+                <img class="viewer__cardLogo" src="./img/acer.png" alt="acer">
+            </a>
+            <a class="viewer__card swiper-slide" href="#" title="sony">
+                <img class="viewer__cardLogo" src="./img/sony.png" alt="sony">
+            </a>
+
+            <a class="viewer__card swiper-slide" href="#" title="lenovo">
+                <img class="viewer__cardLogo" src="./img/lenovo.png" alt="lenovo">
+            </a>
+            <a class="viewer__card swiper-slide" href="#" title="samsung">
+                <img class="viewer__cardLogo" src="./img/samsung.png" alt="samsung">
+            </a>
+            <a class="viewer__card swiper-slide" href="#" title="apple">
+                <img class="viewer__cardLogo" src="./img/apple.png" alt="apple">
+            </a>
+        </div>
+        <div class="viewer__pagination swiper-pagination"></div>
+        <button class="viewer__openBtn" title="Показать все">Показать все</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./main.js"></script>
+
+</body>
+</html>
