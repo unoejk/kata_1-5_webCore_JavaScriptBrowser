@@ -1,12 +1,9 @@
 'use strict'
 
-const blockWrapper=document.querySelector('.blockWrapper')
-const openBtn=document.querySelector('.viewer__openBtn')
-
-const isMobile=/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)
-if(!isMobile) {
-    blockWrapper.classList.add('blockWrapper--isDesktop')
-}
+// const isMobile=/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)
+// if(!isMobile) {
+//     blockWrapper.classList.add('blockWrapper--isDesktop')
+// }
 
 
 const swiper=new Swiper(".swiper",{
@@ -29,21 +26,24 @@ const swiper=new Swiper(".swiper",{
     mousewheel: true,
     keyboard: true,
 
-    enabled:isMobile,
-
-    // breakpoints:{
-    //     768:{
-    //         enabled: false,
-    //     },
-    // },
+    breakpoints:{
+        768:{
+            enabled: false,
+        },
+    },
 });
+
+const blockWrapper=document.querySelector('.blockWrapper')
+const openBtn=document.querySelector('.viewer__openBtn')
 
 openBtn.addEventListener('click',()=>{
     console.log(blockWrapper.classList.contains('blockWrapper--isOpen'))
     if (blockWrapper.classList.contains('blockWrapper--isOpen')){
         blockWrapper.classList.remove('blockWrapper--isOpen')
+        openBtn.textContent='Показать все'
     }else {
         blockWrapper.classList.add('blockWrapper--isOpen')
+        openBtn.textContent='Скрыть'
     }
 })
 
