@@ -60,10 +60,7 @@ p+p{
 
 /*----------------blockWrapper*/
 
-.blockWrapper{
-    /*background-color: #3c3f41;*/
-    /*height: 100px;*/
-}
+.blockWrapper{}
 
 
 /*----------------headerText*/
@@ -89,24 +86,7 @@ p+p{
 .viewer{
     padding: 16px 16px 38px 16px;
 }
-.viewer__content{
-    /*box-shadow: inset -20px 0 10px -15px red, !*по 10px с обоих сторон*!*/
-    /*inset 20px 0 10px -15px red;*/
-    /*background-color: tomato;*/
-    /*z-index: -2;*/
-}
-/*.swiper__wrapper:after{*/
-/*    content: "";*/
-/*    !*background-color: tomato;*!*/
-/*    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);*/
-/*    width: 24px;*/
-/*    height: 100%;*/
-
-/*    !*display: block;*!*/
-/*    position: fixed;*/
-/*    right: -16px;*/
-/*    top: 0;*/
-/*}*/
+.viewer__content{}
 
 .viewer__card{
     box-sizing: border-box;
@@ -165,8 +145,6 @@ p+p{
     content: url("../img/openContentSvg.svg");
     width: 24px;
     height: 24px;
-    /*vertical-align: middle;*/
-    /*text-align: center;*/
 }
 .viewer__openBtn:focus{
     box-shadow: 0 0 0 2px #41F6D7;

@@ -1,10 +1,5 @@
 'use strict'
 
-// const isMobile=/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)
-// if(!isMobile) {
-//     blockWrapper.classList.add('blockWrapper--isDesktop')
-// }
-
 
 const swiper=new Swiper(".swiper",{
     wrapperClass: 'swiper-wrapper', //пока так, нужно переписать css?
