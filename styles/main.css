@@ -190,6 +190,9 @@ p+p{
     .viewer{
         padding: 24px 24px 34px 24px;
     }
+    .viewer:after{
+        display: none;
+    }
     .viewer__contentList{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
