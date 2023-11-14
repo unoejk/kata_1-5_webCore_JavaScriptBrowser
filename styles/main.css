@@ -86,7 +86,21 @@ p+p{
 .viewer{
     padding: 16px 16px 38px 16px;
 }
-.viewer__content{}
+.viewer:after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 88px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+    z-index: 1;
+}
+.viewer__contentList{}
+.viewer__contentItem{
+    width: fit-content;
+}
 
 .viewer__card{
     box-sizing: border-box;
@@ -160,9 +174,6 @@ p+p{
     .smDisabled{
         display: none;
     }
-    .viewer__content{
-        gap: 16px;
-    }
     .viewer__openBtn{
         display: none;
     }
@@ -179,7 +190,7 @@ p+p{
     .viewer{
         padding: 24px 24px 34px 24px;
     }
-    .viewer__content{
+    .viewer__contentList{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 16px 24px;
@@ -188,10 +199,13 @@ p+p{
         max-height: 160px;
         overflow: hidden;
     }
-    .viewer__card{
+    .viewer__contentItem{
         width: auto;
     }
-    .blockWrapper--isOpen .viewer__content{
+    .viewer__card{
+        width: 100%;
+    }
+    .blockWrapper--isOpen .viewer__contentList{
         max-height: fit-content;
     }
 }
@@ -206,7 +220,8 @@ p+p{
     .viewer{
         padding: 24px 32px 34px 32px;
     }
-    .viewer__content{
+    .viewer__contentList{
         gap: 16px 32px;
     }
+    .viewer__contentItem{}
 }

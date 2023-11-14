@@ -2,8 +2,9 @@
 
 
 const swiper=new Swiper(".swiper",{
-    wrapperClass: 'swiper-wrapper', //пока так, нужно переписать css?
-    slideClass: 'swiper-slide',     //пока так, нужно переписать css?
+    wrapperClass: 'swiper-wrapper',
+    slideClass: 'swiper-slide',
+    spaceBetween: 16,
 
     pagination:{                    //нумерация страниц
         el: '.swiper-pagination',
@@ -24,6 +25,7 @@ const swiper=new Swiper(".swiper",{
     breakpoints:{
         768:{
             enabled: false,
+            spaceBetween: 0,
         },
     },
 });
